@@ -1,0 +1,57 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    min-height:100vh;
+    background-color: aqua;
+    position: relative;
+    /* why we are giving the width as 100% not 100 vw  */
+    width:100%;           
+    padding: 0 1vw;
+    padding-top: 19vh;
+    
+}
+
+#page1 h1{
+    font-size: 15.2vw;
+    text-transform: uppercase;
+    font-family:futura;
+    line-height: 14vw;
+    letter-spacing: -5px;
+}
+
+#page1 #video-container{
+    height: 100vh;
+    background-color: grey;
+    width: 100%;
+    margin-top: 3vh;
+    /* why we gave video container position relative  */
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 3vw 2vw;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.3vw;
+    font-family: futura;
+    /* ye dhyan se dekh  iske bad javascript pe kam kiya  */
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
